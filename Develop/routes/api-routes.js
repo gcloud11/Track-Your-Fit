@@ -1,8 +1,11 @@
 const router = require('express').Router();
 const db = require("../models");
 
+// Works! 
+// router.get('/test', (req, res) => res.json('Sample API get endpoint'));
 
-//GET /api/workouts gettting last workout() 
+
+// getLastWorkout() GET /api/workouts
 
 router.get("/workouts", (req, res) => {
     db.Workout.find({})
@@ -14,7 +17,7 @@ router.get("/workouts", (req, res) => {
         });
 });
 
-//PUT /api/workouts/  add an exercise 
+// addExercise PUT /api/workouts/ 
 
 router.put("/workouts/:id", ({ params, body }, res) => {
     console.log(body);
@@ -39,7 +42,7 @@ router.put("/workouts/:id", ({ params, body }, res) => {
         });
 });
 
-//POST /api/workouts create workout 
+// createWorkout POST /api/workouts
 
 router.post("/workouts", ({ body }, res) => {
     console.log(body);
@@ -50,11 +53,9 @@ router.post("/workouts", ({ body }, res) => {
         .catch(err => {
             res.json(err);
         });
-
-    res.send('Got a POST request')
 });
 
-// GET /api/workouts/range Gets Workouts In Range
+// getWorkoutsInRange() GET /api/workouts/range
 
 router.get("/workouts/range", (req, res) => {
     db.Workout.find({}).limit(7)
