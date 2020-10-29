@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb+srv://gcloud11:2011Blue@cluster0.5dd92.mongodb.net/workout_db?retryWrites=true&w=majority", 
+    process.env.MONGODB_URI || "mongodb://localhost/workout", 
     { 
     useNewUrlParser: true, 
     useUnifiedTopology: true,
