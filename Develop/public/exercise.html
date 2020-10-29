@@ -7,28 +7,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
   <title>Fitness Tracker</title>
 </head>
 
 <body>
-  <nav>
+  <nav class="nav-back"> 
     <a href="/">Fitness Tracker</a>
     <a href="/stats">Dashboard</a>
   </nav>
-  <div class="wrapper">
+  <div class="wrapper background">
     <header>
-      <h1>Fitness Tracker</h1>
+      <span class="h1-header">Fitness Tracker</span>
     </header>
     <div class="ui container exercise">
       <div class="ui raised card m-auto">
-        <h2>Add Your Exercise</h2>
+        <h2 class="font-change">Add Your Exercise</h2>
         <form action="POST">
           <div class="workout-type">
             <label for="type">Exercise Type:</label>
             <select name="type" id="type">
-              <option disabled selected>Select Exercise Type</option>
-              <option value="resistance">Resistance</option>
-              <option value="cardio">Cardio</option>
+              <option disabled selected class="font-change" >Select Exercise Type</option>
+              <option value="resistance" class="font-change" >Resistance</option>
+              <option value="cardio" class="font-change" >Cardio</option>
             </select>
           </div>
           <div class="cardio-form d-none">

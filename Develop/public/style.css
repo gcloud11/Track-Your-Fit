@@ -12,9 +12,10 @@ body,
   height: 100%;
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body, .font-change {
+  font-family: 'Syne Mono', monospace;
 }
+
 
 nav {
   background-color: #5793fd;
@@ -435,3 +436,28 @@ form > button {
     right: -320px;
   }
 }
+
+/* Added */
+.background {
+  background: url("./images/Wp2.jpeg");
+}
+
+.nav-back {
+  background-color: rgb(97, 9, 90);
+} 
+
+.h1-header { 
+  background-color: rgb(73, 73, 73);
+  color: white;
+  padding: 10px;
+  border-radius: 1px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.background2 {
+  background-color: white;
+  padding: 20px;
+}
+
+
