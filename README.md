@@ -8,13 +8,13 @@ This application was created for the user to create, view and track their daily 
 
 
 ## Technologies 
-```
+
 * [node.Js](https://nodejs.org/en/) - JavaScript runtime
 * [Express.Js](https://expressjs.com/) - node.js framework
 * [Mongo Atlas](https://www.mongodb.com/cloud) - NoSQL database
 * [Heroku](https://devcenter.heroku.com/) - node.js framework
 * [NPM](https://expressjs.com/) - Dependency management
-```
+
 
 ## Installation 
 
