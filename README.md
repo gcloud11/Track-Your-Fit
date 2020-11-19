@@ -36,9 +36,9 @@ Open integrated terminal in server.js file:
 ```
 node server.js
 ```
-This connects to PORT 3000 for application use. Type in webpage url:
+This connects to PORT 8081 for application use. Type in webpage url:
 ```
-localhost3000
+localhost8081
 ```
 
 ## Visuals
